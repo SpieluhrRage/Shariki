@@ -5,18 +5,14 @@ void generate(int t, int n, int* mas, int &ct) {
 	bool fl = false;
 	
 	if (t == (n - 1)) {
-		/*for (int i = 0; i < n; ++i) {
-			cout << mas[i] << " ";
-			
-		}
-		cout << endl;*/
-		for (int i = 0; i <= 8; i++) {
+		
+		for (int i = 0; i < n; i++) {
 			if (i == mas[i]) {
 				fl = true;
 			}
 		}
 		if (fl) {
-			ct++;
+			ct++; 
 			fl = false;
 		}
 			
@@ -37,8 +33,8 @@ void generate(int t, int n, int* mas, int &ct) {
 
 int main() {
 	int ct = 0;
-	int mass[9] = { 1, 0, 2, 8, 3, 7, 4, 6, 5 };
-	generate(0, 9, mass, ct);
+	int mass[10] = { 1, 0, 2, 8, 3, 7, 4, 6, 5, 9};
+	generate(0, 10, mass, ct);
 	cout << ct;
 	
 
