@@ -34,7 +34,7 @@ void generate(int t, int n, int* mas, int &ct) {
 int main() {
 	int ct = 0;
 	int mass[10] = { 1, 0, 2, 8, 3, 7, 4, 6, 5, 9};
-	generate(0, 10, mass, ct);
+	generate(0, 10, mass, ct); //второй аргумент в функции - кол-во элементов в массиве
 	cout << ct;
 	
 
